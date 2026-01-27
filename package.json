@@ -1,0 +1,46 @@
+{
+  "name": "todo-state-v2-voice",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:server": "node server/index.js",
+    "dev:client": "vite",
+    "dev": "bash ./scripts/dev.sh",
+    "build": "tsc -b && vite build",
+    "lint": "node ./node_modules/eslint/bin/eslint.js .",
+    "test": "node ./node_modules/vitest/vitest.mjs run",
+    "preview": "vite preview",
+    "clean": "rm -rf node_modules dist logs .vite node_modules/.vite coverage .cache .aider*",
+    "size": "du -sh node_modules dist logs .vite node_modules/.vite coverage .cache .aider* 2>/dev/null | sort -h"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "convex": "^1.31.5",
+    "express": "^4.19.2",
+    "framer-motion": "11.13.1",
+    "i18next": "latest",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4",
+    "vitest": "^3.2.4"
+  }
+}

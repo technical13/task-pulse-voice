@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Codex CLI Output Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "verify_ok"],
+  "properties": {
+    "status": { "type": "string" },
+    "verify_ok": { "type": "boolean" }
+  }
+}

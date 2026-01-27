@@ -1,0 +1,149 @@
+{
+  "app": {
+    "eyebrow": "Tablero de enfoque",
+    "title": "Pulso de tareas",
+    "subtitle": "Un espacio tranquilo y animado para las tareas de hoy.",
+    "today": "Hoy"
+  },
+  "stats": {
+    "panelLabel": "Estadísticas de tareas",
+    "total": "Total",
+    "active": "Activas",
+    "done": "Completadas",
+    "activeCount_one": "{{count}} tarea activa",
+    "activeCount_other": "{{count}} tareas activas"
+  },
+  "input": {
+    "panelLabel": "Agregar tarea",
+    "srLabel": "Agregar una tarea nueva",
+    "placeholder": "Agrega una tarea y presiona Enter...",
+    "nameAria": "Título de la tarea",
+    "button": "Agregar"
+  },
+  "filters": {
+    "panelLabel": "Filtros de tareas",
+    "all": "Todas",
+    "active": "Activas",
+    "completed": "Completadas",
+    "allLabel": "Todas las tareas",
+    "activeLabel": "Tareas activas",
+    "completedLabel": "Tareas completadas"
+  },
+  "columns": {
+    "backlog": "Pendientes",
+    "in_progress": "En curso",
+    "done": "Hechas"
+  },
+  "list": {
+    "panelLabel": "Lista de tareas",
+    "emptyTitle": "Aún no hay tareas.",
+    "emptySubtitle": "Agrega una nueva para empezar."
+  },
+  "todo": {
+    "markBacklog": "Mover “{{title}}” a pendientes",
+    "markDone": "Marcar “{{title}}” como completada",
+    "open": "Abrir la tarea “{{title}}”",
+    "addedAt": "Agregada {{time}}",
+    "deleteAria": "Eliminar “{{title}}”",
+    "deleteButton": "Eliminar"
+  },
+  "panel": {
+    "details": "Detalles de la tarea",
+    "close": "Cerrar",
+    "closeAria": "Cerrar detalles de la tarea",
+    "title": {
+      "error": "No se pudieron cargar los datos",
+      "notFound": "Tarea no encontrada",
+      "loading": "Cargando…"
+    },
+    "errorMessage": "No se pudieron cargar los datos.",
+    "notFoundMessage": "Tarea no encontrada.",
+    "retry": "Reintentar",
+    "back": "Volver",
+    "loadingMessage": "Cargando…"
+  },
+  "description": {
+    "label": "Descripción",
+    "placeholder": "Sin descripción",
+    "expand": "Expandir",
+    "collapse": "Contraer"
+  },
+  "activity": {
+    "label": "Actividad",
+    "title": "Actividad",
+    "caption": "Historial de cambios",
+    "empty": "Aún no hay actividad.",
+    "toggleShow": "Mostrar actividad",
+    "toggleHide": "Ocultar"
+  },
+  "chat": {
+    "label": "Chat",
+    "title": "Chat",
+    "caption": "Mensajes de la tarea",
+    "nameLabel": "Tu nombre",
+    "namePlaceholder": "Por ejemplo, Marina",
+    "empty": "Aún no hay mensajes.",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Escribe un mensaje...",
+    "send": "Enviar",
+    "voiceButton": "Dictar",
+    "voiceRecording": "⏹ Grabando...",
+    "voiceTranscribing": "Transcribiendo...",
+    "errors": {
+      "nameRequired": "Introduce tu nombre antes de enviar."
+    }
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "loading": "Comprobando sesión…",
+    "identityFallback": "Cuenta",
+    "signedInAs": "Sesión iniciada como {{name}}",
+    "signedOut": "No has iniciado sesión",
+    "avatarAlt": "Avatar de {{name}}",
+    "configMissingClient": "Configura VITE_CONVEX_SITE_URL en el entorno del cliente.",
+    "configMissingServer": "Configura rutas HTTP de Convex auth y las variables: AUTH_GITHUB_ID/SECRET, SITE_URL."
+  },
+  "demo": {
+    "seedButton": "Crear datos de demostración",
+    "authHint": "Inicia sesión para crear datos de demostración",
+    "alreadySeeded": "Datos de demostración ya creados"
+  },
+  "toast": {
+    "taskDeleted": "Tarea eliminada",
+    "demoSeeded": "Datos de demostración creados",
+    "undo": "Deshacer",
+    "undoAria": "Deshacer eliminación de tarea"
+  },
+  "errors": {
+    "titleRequired": "Introduce un título de tarea."
+  },
+  "time": {
+    "justNow": "justo ahora"
+  },
+  "status": {
+    "backlog": "Pendiente",
+    "in_progress": "En curso",
+    "done": "Hecha",
+    "unknown": "Desconocido"
+  },
+  "events": {
+    "actorFallback": "Alguien",
+    "taskCreated": "{{actor}} creó una tarea",
+    "taskStatusChanged": "{{actor}} cambió el estado: {{from}} → {{to}}",
+    "descriptionUpdatedWithPreview": "{{actor}} actualizó la descripción: “{{preview}}”",
+    "descriptionUpdated": "{{actor}} actualizó la descripción",
+    "taskReorderedWithIndex": "{{actor}} movió la tarea: {{from}} → {{to}}",
+    "taskReordered": "{{actor}} cambió el orden de la tarea",
+    "messageSentWithPreview": "{{actor}} envió un mensaje: “{{preview}}”",
+    "messageSent": "{{actor}} envió un mensaje",
+    "taskUpdated": "{{actor}} actualizó la tarea"
+  },
+  "language": {
+    "label": "Idioma de la interfaz",
+    "set": "Cambiar idioma a {{language}}",
+    "ru": "Ruso",
+    "en": "Inglés",
+    "es": "Español"
+  }
+}

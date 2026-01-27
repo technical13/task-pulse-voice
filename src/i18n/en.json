@@ -1,0 +1,149 @@
+{
+  "app": {
+    "eyebrow": "Focus board",
+    "title": "Task pulse",
+    "subtitle": "A calm, animated space for today’s tasks.",
+    "today": "Today"
+  },
+  "stats": {
+    "panelLabel": "Task stats",
+    "total": "Total",
+    "active": "Active",
+    "done": "Completed",
+    "activeCount_one": "{{count}} active task",
+    "activeCount_other": "{{count}} active tasks"
+  },
+  "input": {
+    "panelLabel": "Add a task",
+    "srLabel": "Add a new task",
+    "placeholder": "Add a task and press Enter...",
+    "nameAria": "Task title",
+    "button": "Add"
+  },
+  "filters": {
+    "panelLabel": "Task filters",
+    "all": "All",
+    "active": "Active",
+    "completed": "Completed",
+    "allLabel": "All tasks",
+    "activeLabel": "Active tasks",
+    "completedLabel": "Completed tasks"
+  },
+  "columns": {
+    "backlog": "Backlog",
+    "in_progress": "In Progress",
+    "done": "Done"
+  },
+  "list": {
+    "panelLabel": "Task list",
+    "emptyTitle": "No tasks here yet.",
+    "emptySubtitle": "Add a new one to get started."
+  },
+  "todo": {
+    "markBacklog": "Move “{{title}}” to backlog",
+    "markDone": "Mark “{{title}}” as done",
+    "open": "Open task “{{title}}”",
+    "addedAt": "Added {{time}}",
+    "deleteAria": "Delete “{{title}}”",
+    "deleteButton": "Delete"
+  },
+  "panel": {
+    "details": "Task details",
+    "close": "Close",
+    "closeAria": "Close task details",
+    "title": {
+      "error": "Unable to load data",
+      "notFound": "Task not found",
+      "loading": "Loading…"
+    },
+    "errorMessage": "Unable to load data.",
+    "notFoundMessage": "Task not found.",
+    "retry": "Retry",
+    "back": "Back",
+    "loadingMessage": "Loading…"
+  },
+  "description": {
+    "label": "Description",
+    "placeholder": "No description yet",
+    "expand": "Expand",
+    "collapse": "Collapse"
+  },
+  "activity": {
+    "label": "Activity",
+    "title": "Activity",
+    "caption": "Change history",
+    "empty": "No activity yet.",
+    "toggleShow": "Show activity",
+    "toggleHide": "Hide"
+  },
+  "chat": {
+    "label": "Chat",
+    "title": "Chat",
+    "caption": "Task messages",
+    "nameLabel": "Your name",
+    "namePlaceholder": "For example, Marina",
+    "empty": "No messages yet.",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write a message...",
+    "send": "Send",
+    "voiceButton": "Dictate",
+    "voiceRecording": "⏹ Recording...",
+    "voiceTranscribing": "Transcribing...",
+    "errors": {
+      "nameRequired": "Enter your name before sending."
+    }
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "loading": "Checking sign-in…",
+    "identityFallback": "Account",
+    "signedInAs": "Signed in as {{name}}",
+    "signedOut": "You are not signed in",
+    "avatarAlt": "{{name}} avatar",
+    "configMissingClient": "Set VITE_CONVEX_SITE_URL in the client env.",
+    "configMissingServer": "Configure Convex auth HTTP routes and env: AUTH_GITHUB_ID/SECRET, SITE_URL."
+  },
+  "demo": {
+    "seedButton": "Create demo data",
+    "authHint": "Sign in to create demo data",
+    "alreadySeeded": "Demo already created"
+  },
+  "toast": {
+    "taskDeleted": "Task deleted",
+    "demoSeeded": "Demo data created",
+    "undo": "Undo",
+    "undoAria": "Undo task deletion"
+  },
+  "errors": {
+    "titleRequired": "Enter a task title."
+  },
+  "time": {
+    "justNow": "just now"
+  },
+  "status": {
+    "backlog": "Backlog",
+    "in_progress": "In Progress",
+    "done": "Done",
+    "unknown": "Unknown"
+  },
+  "events": {
+    "actorFallback": "Someone",
+    "taskCreated": "{{actor}} created a task",
+    "taskStatusChanged": "{{actor}} changed status: {{from}} → {{to}}",
+    "descriptionUpdatedWithPreview": "{{actor}} updated the description: “{{preview}}”",
+    "descriptionUpdated": "{{actor}} updated the description",
+    "taskReorderedWithIndex": "{{actor}} moved the task: {{from}} → {{to}}",
+    "taskReordered": "{{actor}} changed the task order",
+    "messageSentWithPreview": "{{actor}} sent a message: “{{preview}}”",
+    "messageSent": "{{actor}} sent a message",
+    "taskUpdated": "{{actor}} updated the task"
+  },
+  "language": {
+    "label": "Interface language",
+    "set": "Switch language to {{language}}",
+    "ru": "Russian",
+    "en": "English",
+    "es": "Spanish"
+  }
+}

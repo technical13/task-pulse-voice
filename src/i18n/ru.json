@@ -1,0 +1,151 @@
+{
+  "app": {
+    "eyebrow": "Фокус-доска",
+    "title": "Пульс задач",
+    "subtitle": "Спокойное анимированное пространство для задач на сегодня.",
+    "today": "Сегодня"
+  },
+  "stats": {
+    "panelLabel": "Статистика задач",
+    "total": "Всего",
+    "active": "Активные",
+    "done": "Завершенные",
+    "activeCount_one": "{{count}} активная",
+    "activeCount_few": "{{count}} активные",
+    "activeCount_many": "{{count}} активных",
+    "activeCount_other": "{{count}} активных"
+  },
+  "input": {
+    "panelLabel": "Добавить задачу",
+    "srLabel": "Добавить новую задачу",
+    "placeholder": "Добавьте задачу и нажмите Enter...",
+    "nameAria": "Название задачи",
+    "button": "Добавить"
+  },
+  "filters": {
+    "panelLabel": "Фильтры задач",
+    "all": "Все",
+    "active": "Активные",
+    "completed": "Завершённые",
+    "allLabel": "Все задачи",
+    "activeLabel": "Активные задачи",
+    "completedLabel": "Завершённые задачи"
+  },
+  "columns": {
+    "backlog": "Очередь",
+    "in_progress": "В работе",
+    "done": "Готово"
+  },
+  "list": {
+    "panelLabel": "Список задач",
+    "emptyTitle": "Здесь пока нет задач.",
+    "emptySubtitle": "Добавьте новую, чтобы начать."
+  },
+  "todo": {
+    "markBacklog": "Переместить «{{title}}» в очередь",
+    "markDone": "Отметить «{{title}}» как выполненную",
+    "open": "Открыть задачу «{{title}}»",
+    "addedAt": "Добавлено {{time}}",
+    "deleteAria": "Удалить «{{title}}»",
+    "deleteButton": "Удалить"
+  },
+  "panel": {
+    "details": "Детали задачи",
+    "close": "Закрыть",
+    "closeAria": "Закрыть детали задачи",
+    "title": {
+      "error": "Не удалось загрузить данные",
+      "notFound": "Задача не найдена",
+      "loading": "Загрузка…"
+    },
+    "errorMessage": "Не удалось загрузить данные.",
+    "notFoundMessage": "Задача не найдена.",
+    "retry": "Повторить",
+    "back": "Назад",
+    "loadingMessage": "Загрузка…"
+  },
+  "description": {
+    "label": "Описание",
+    "placeholder": "Описание не добавлено",
+    "expand": "Развернуть",
+    "collapse": "Свернуть"
+  },
+  "activity": {
+    "label": "Активность",
+    "title": "Активность",
+    "caption": "История изменений",
+    "empty": "Пока нет активности.",
+    "toggleShow": "Показать активность",
+    "toggleHide": "Скрыть"
+  },
+  "chat": {
+    "label": "Чат",
+    "title": "Чат",
+    "caption": "Сообщения по задаче",
+    "nameLabel": "Ваше имя",
+    "namePlaceholder": "Например, Марина",
+    "empty": "Сообщений пока нет.",
+    "messageLabel": "Сообщение",
+    "messagePlaceholder": "Напишите сообщение...",
+    "send": "Отправить",
+    "voiceButton": "Диктовка",
+    "voiceRecording": "⏹ Запись...",
+    "voiceTranscribing": "Распознаю...",
+    "errors": {
+      "nameRequired": "Введите имя перед отправкой."
+    }
+  },
+  "auth": {
+    "signIn": "Войти",
+    "signOut": "Выйти",
+    "loading": "Проверяем вход…",
+    "identityFallback": "Аккаунт",
+    "signedInAs": "Вы вошли как {{name}}",
+    "signedOut": "Вы не вошли",
+    "avatarAlt": "Аватар {{name}}",
+    "configMissingClient": "Укажите VITE_CONVEX_SITE_URL в env клиента.",
+    "configMissingServer": "Настройте Convex auth: HTTP routes и env AUTH_GITHUB_ID/SECRET, SITE_URL."
+  },
+  "demo": {
+    "seedButton": "Создать демо-данные",
+    "authHint": "Войдите, чтобы создать демо-данные",
+    "alreadySeeded": "Демо уже создано"
+  },
+  "toast": {
+    "taskDeleted": "Задача удалена",
+    "demoSeeded": "Демо-данные созданы",
+    "undo": "Отменить",
+    "undoAria": "Отменить удаление задачи"
+  },
+  "errors": {
+    "titleRequired": "Введите название задачи."
+  },
+  "time": {
+    "justNow": "только что"
+  },
+  "status": {
+    "backlog": "В очереди",
+    "in_progress": "В работе",
+    "done": "Готово",
+    "unknown": "Неизвестно"
+  },
+  "events": {
+    "actorFallback": "Кто-то",
+    "taskCreated": "{{actor}} создал задачу",
+    "taskStatusChanged": "{{actor}} изменил статус: {{from}} → {{to}}",
+    "descriptionUpdatedWithPreview": "{{actor}} обновил описание: «{{preview}}»",
+    "descriptionUpdated": "{{actor}} обновил описание",
+    "taskReorderedWithIndex": "{{actor}} переместил задачу: {{from}} → {{to}}",
+    "taskReordered": "{{actor}} изменил порядок задачи",
+    "messageSentWithPreview": "{{actor}} отправил сообщение: «{{preview}}»",
+    "messageSent": "{{actor}} отправил сообщение",
+    "taskUpdated": "{{actor}} обновил задачу"
+  },
+  "language": {
+    "label": "Язык интерфейса",
+    "set": "Переключить язык на {{language}}",
+    "ru": "Русский",
+    "en": "English",
+    "es": "Español"
+  }
+}
