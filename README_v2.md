@@ -14,15 +14,24 @@ npm install
 2) Создать `.env.local` в корне проекта (скопировать из `.env.local.example`). Если dev-сервер уже запущен, перезапустить `npm run dev`.
    SPEECHCORE_AUTH_PREFIX можно указывать как `Bearer` без пробела — пробел добавляется кодом.
 
-3) Запустить клиент и сервер:
+## Переменные окружения (Vercel)
+
+Все ключи и токены задаются только через env, без секретов в репозитории.
+
+- `VITE_CONVEX_URL` — URL Convex backend для клиента.
+- `SPEECHCORE_API_TOKEN` — токен SpeechCore для serverless `/api/stt`.
+- `SPEECHCORE_AUTH_HEADER` — имя заголовка авторизации (по умолчанию `Authorization`).
+- `SPEECHCORE_AUTH_PREFIX` — префикс авторизации (по умолчанию `Bearer`).
+
+3) Запуск serverless (рекомендуется):
 
 ```bash
-npm run dev
+npm run dev:vercel
 ```
 
-Отдельно:
+Локальный server (опционально, если нужно прогнать старый proxy):
 
 ```bash
 npm run dev:server
-npm run dev:client
+npm run dev
 ```

@@ -6,7 +6,8 @@
   "scripts": {
     "dev:server": "node server/index.js",
     "dev:client": "vite",
-    "dev": "bash ./scripts/dev.sh",
+    "dev": "vite",
+    "dev:vercel": "vercel dev",
     "build": "tsc -b && vite build",
     "lint": "node ./node_modules/eslint/bin/eslint.js .",
     "test": "node ./node_modules/vitest/vitest.mjs run",

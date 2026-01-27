@@ -695,7 +695,7 @@ function App() {
       try {
         const formData = new FormData()
         formData.append('file', blob, 'recording.webm')
-        const response = await fetch('http://localhost:8787/stt', {
+        const response = await fetch('/api/stt', {
           method: 'POST',
           body: formData
         })
