@@ -1,7 +1,12 @@
 type SttRequest = {
   method?: string
   headers?: Record<string, string | string[] | undefined>
-  on?: (event: string, listener: (chunk: Buffer) => void) => void
+  on?: {
+    (event: 'data', listener: (chunk: Uint8Array) => void): void
+    (event: 'end', listener: () => void): void
+    (event: 'error', listener: (err: Error) => void): void
+    (event: string, listener: (...args: unknown[]) => void): void
+  }
 }
 
 type SttResponse = {
@@ -17,7 +22,7 @@ type MultipartFile = {
 const readRequestBody = async (req: SttRequest) => {
   const chunks: Buffer[] = []
   await new Promise<void>((resolve, reject) => {
-    req.on?.('data', (chunk: Buffer) => {
+    req.on?.('data', (chunk: Uint8Array) => {
       chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk))
     })
     req.on?.('end', () => resolve())
@@ -144,7 +149,8 @@ export default async function handler(req: SttRequest, res: SttResponse) {
     const authValue = prefix ? `${prefix} ${token}` : token
 
     const form = new FormData()
-    const fileBlob = new Blob([file.data], { type: file.contentType || 'audio/webm' })
+    const fileBytes = new Uint8Array(file.data.buffer, file.data.byteOffset, file.data.byteLength)
+    const fileBlob = new Blob([fileBytes], { type: file.contentType || 'audio/webm' })
     const outgoingFilename = file.filename || 'recording.webm'
     form.append('file', fileBlob, outgoingFilename)
 
